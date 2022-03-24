@@ -1,0 +1,154 @@
+/* * {
+    background-color: black;
+    color:antiquewhite;
+} */
+
+.titulo {
+    text-align: center;
+}
+.casillero {
+    border-style: ridge ;
+}
+.contenedorUsuariosTotal {
+    padding-bottom: 3rem;
+}
+/* CARD USUARIO */
+.cardUsuario {
+    display: grid;
+    width: 18rem;
+    height: auto;
+    grid-template-areas:"nada nada nada nada nada cerrar"
+                        "avatar avatar nombre nombre nombre nombre"
+                        "turnos turnos turnos casillero casillero casillero";
+    min-width: auto;
+}
+.cardUsuarioItem{
+    text-align: center;
+    width: auto;
+    height: auto;
+} 
+.btnCerrarCardUsuario{
+    grid-area: cerrar;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-bottom: 1rem;
+    margin-left: 50%;
+
+}
+.avatarUsuario{
+    grid-area: avatar;
+    padding: 0rem;
+    margin-left: 1rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nombreUsuario{
+    grid-area: nombre;
+    margin-top: 1rem;
+}
+.turnosUsuario{
+    grid-area: turnos;
+    margin-top: 1rem;
+}
+.casilleroUsuario{
+    grid-area: casillero;
+    margin-top: 1rem;
+}
+.inputNombreUsuario{
+    max-width: 8rem;
+}
+.cardUsuario2{
+    display: none;
+}
+.cardUsuario3{
+    display: none;
+}
+.cardUsuario4{
+    display: none;
+}
+
+/*********** AGREGAR USUARIO ***********/
+.cardAgregarUsuario{
+    /* margin-left: 2rem; */
+    width: 18rem;
+    height: 8.5rem;
+    text-align: center;
+    align-items: center;
+}
+.tituloAgregarUsuario{
+    margin-top: 1rem;
+}
+.btnAgregarUsuario{
+    width: 5rem;
+    height: 3rem;
+    box-shadow: none;
+}
+.btn-check:focus+.btn, .btn:focus {
+    outline: 0;
+    box-shadow: none; 
+} 
+/*********** FIN AGREGAR USUARIO ***********/
+
+/*********** SELECCION DE AVATAR ***********/
+
+.contenedorListaAvatares{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: auto;
+}
+.contenedorAvatar{
+    border-style: none;
+    margin: 0.5rem;
+    background-color: transparent;
+    width: 8rem;
+    height: 8rem;    
+}  
+
+.avatar {
+    width: 8rem;
+    height: 8rem;
+}
+
+.avatar:hover{
+    border: 2px solid #000000;
+    border-radius: 25%;
+}  
+
+.avatarPokemon{
+    width: 4rem;
+    height: 4rem;
+}
+
+/*********** FIN SELECCION DE AVATAR ***********/
+
+
+.divBtnComenzarJuego{
+    margin-left: auto;
+  margin-right: auto;
+}
+.btnComenzarJuego{
+    width: 12rem;
+    height: 7rem;
+    
+}
+.btnOcultarMostrar{
+    display: none;
+}
+.divBotones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensajes {
+    display: flex;
+    justify-content: center;
+}
+.btnIgual{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
