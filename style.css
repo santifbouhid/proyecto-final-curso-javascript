@@ -3,16 +3,63 @@
     color:antiquewhite;
 } */
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("img/fondo-pokemon.png");
+    background-color: #fff;
+}
+
+h1{
+    color: #FFF836;
+}
+
 .titulo {
     text-align: center;
 }
+.contenedorTablero{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 5rem;
+}
 .casillero {
-    border-style: ridge ;
+    border-top-style:solid ;
+    border-bottom-style:solid ;
+    border-style:solid ;
+    border-color: #6077FF;
+    /* border-top-color: #1D1B1F;
+    border-bottom-color: #1D1B1F; */
+    height: 8rem;
+
+    min-width: 12rem;
+    
+   /******************/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    align-content: center;
+    /******************/
+    color: #424242;
+    font-size: xx-large;
+    background-color: #FFD700;
+
 }
-.contenedorUsuariosTotal {
+
+
+/* .contenedorUsuariosTotal {
     padding-bottom: 3rem;
+} */
+
+
+/*********** CARD USUARIO ***********/
+.contenedorUsuarios{
+    display: flex;
+    justify-content: center;
 }
-/* CARD USUARIO */
+
 .cardUsuario {
     display: grid;
     width: 18rem;
