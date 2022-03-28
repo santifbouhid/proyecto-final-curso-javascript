@@ -151,7 +151,7 @@ const sweetAlertTirDado = () => {
         confirmButtonText: 'OK'
     }).then((result) => {
         if (result.isConfirmed) {
-            mensajes.innerHTML= `<p>¡Salió un ${ultimoDado}! ¿El próximo tiro será menor, igual o mayor?</p>`;
+            mensajes.innerHTML= `<p>¡Salió un ${ultimoDado}! <br> ¿El próximo tiro será menor, igual o mayor?</p>`;
         }
     })   
 })
@@ -368,7 +368,7 @@ const avanzaCasillero = (x) => {
         ganaElJuego(usuario);
     } else {
         usuario.casilleroAlert = usuario.casillero;
-        mensajes.innerHTML= `<p>¡Salió ${nuevoDado}!\n¡Ganaste :D! avanzas al casillero ${usuario.casilleroAlert} ¿El próximo tiro será menor, igual o mayor?</p>`
+        mensajes.innerHTML= `<p>¡Salió ${nuevoDado}!\n¡Ganaste :D! avanzas al casillero ${usuario.casilleroAlert} <br> ¿El próximo tiro será menor, igual o mayor?</p>`
         //casilleroUsuario1.innerHTML = `<p>Casillero ${usuario.casilleroAlert}</p>`; 
     } 
 
@@ -406,11 +406,11 @@ const retrocedeCasillero = () => {
     if (usuario.casillero < 1){
         usuario.casilleroAlert='de salida'
         usuario.casillero=0;
-        mensajes.innerHTML= `<p>¡Salió ${nuevoDado}!\n¡Perdiste :( ! retrocedes al casillero ${usuario.casilleroAlert} ¿El próximo tiro será menor, igual o mayor?</p>`
+        mensajes.innerHTML= `<p>¡Salió ${nuevoDado}!\n¡Perdiste :( ! retrocedes al casillero ${usuario.casilleroAlert} <br> ¿El próximo tiro será menor, igual o mayor?</p>`
         //casilleroUsuario1.innerHTML = `<p>Casillero ${usuario.casilleroAlert}</p>`; 
     } else {
         usuario.casilleroAlert = usuario.casillero;
-        mensajes.innerHTML= `<p>¡Salió ${nuevoDado}!\n¡Perdiste :( ! retrocedes al casillero ${usuario.casilleroAlert}! ¿El próximo tiro será menor, igual o mayor?</p>`
+        mensajes.innerHTML= `<p>¡Salió ${nuevoDado}!\n¡Perdiste :( ! retrocedes al casillero ${usuario.casilleroAlert}! <br> ¿El próximo tiro será menor, igual o mayor?</p>`
     }
     casilleroUsuario1.innerHTML = `<p>Casillero ${usuario.casilleroAlert}</p>`; 
     

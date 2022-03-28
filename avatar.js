@@ -91,8 +91,9 @@ const modificarAvatar = (nuevoAvatar, avatarUsuario, btnCambiarAvatarUsuario, nu
         `<img id="avatarUsuario" class="avatarPokemon" src=${avatar.url}>`;
         btnCambiarAvatarUsuario.appendChild(nuevoAvatar);
         avatar.usuario = numeroUsuario;
+        mensajes.innerHTML= `<p>¡Avatar modificado!</p>`;
       }
-      else {
+      else if (avatar.usuario != 0) {
         mensajes.innerHTML= `<p>Ese avatar no esta disponible. Por favor seleccione otro.</p>`; 
       }
     } 
