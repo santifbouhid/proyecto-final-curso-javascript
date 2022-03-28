@@ -94,15 +94,15 @@ const agregarUsuario = () => {
     cantidadJugadores ++;
     switch (cantidadJugadores) {
         case 2:
-            cardUsuario2.style.display = 'inline';
+            cardUsuario2.style.display = 'flex';
             usuario2.activo = true
             break;
         case 3:
-            cardUsuario3.style.display = 'inline';
+            cardUsuario3.style.display = 'flex';
             usuario3.activo = true
             break;
         case 4:
-            cardUsuario4.style.display = 'inline';
+            cardUsuario4.style.display = 'flex';
             usuario4.activo = true
             contenedorAgregarUsuarios.style.display = 'none';
             break;
@@ -169,7 +169,7 @@ const primerTirarDado = () => {
         btnTirarDado.remove();
         contenedorAgregarUsuarios.remove();
         sweetAlertTirDado();
-        escribirTurnoDe();
+        // escribirTurnoDe();
         btnMayor.style.display = 'inline';
         btnMenor.style.display = 'inline';
         btnIgual.style.display = 'inline'; 

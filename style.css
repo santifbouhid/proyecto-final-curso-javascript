@@ -16,50 +16,25 @@ h1{
 .titulo {
     text-align: center;
 }
-.contenedorTablero{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-content: center;
-    align-content: center;
-    margin-top: 5rem;
-}
-.casillero {
-    border-top-style:solid ;
-    border-bottom-style:solid ;
-    border-style:solid ;
-    border-color: #6077FF;
-    /* border-top-color: #1D1B1F;
-    border-bottom-color: #1D1B1F; */
-    height: 8rem;
-
-    min-width: 12rem;
-    
-   /******************/
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    justify-content: center;
-    align-content: center;
-    /******************/
-    color: #424242;
-    font-size: xx-large;
-    background-color: #FFD700;
-
-}
 
 
-/* .contenedorUsuariosTotal {
-    padding-bottom: 3rem;
-} */
+/********************* USUARIOS *********************/
 
-
-/*********** CARD USUARIO ***********/
 .contenedorUsuarios{
     display: flex;
     justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
 }
 
+
+/*********** CARD USUARIO ***********/
+.contenedorCard{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
 .cardUsuario {
     display: grid;
     width: 18rem;
@@ -74,14 +49,7 @@ h1{
     width: auto;
     height: auto;
 } 
-.btnCerrarCardUsuario{
-    grid-area: cerrar;
-    height: 1.5rem;
-    width: 1.5rem;
-    margin-bottom: 1rem;
-    margin-left: 50%;
 
-}
 .avatarUsuario{
     grid-area: avatar;
     padding: 0rem;
@@ -172,10 +140,45 @@ h1{
 
 /*********** FIN SELECCION DE AVATAR ***********/
 
+/*********** TABLERO ***********/
+.contenedorTablero{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.casillero {
+    border-top-style:solid ;
+    border-bottom-style:solid ;
+    border-style:solid ;
+    border-color: #6077FF;
+    /* border-top-color: #1D1B1F;
+    border-bottom-color: #1D1B1F; */
+    height: 8rem;
+
+    min-width: 12rem;
+    
+   /******************/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    align-content: center;
+    /******************/
+    color: #424242;
+    font-size: xx-large;
+    background-color: #FFD700;
+
+}
+
+/*********** FIN TABLERO ***********/
 
 .divBtnComenzarJuego{
     margin-left: auto;
-  margin-right: auto;
+    margin-right: auto;
 }
 .btnComenzarJuego{
     width: 12rem;
@@ -187,15 +190,23 @@ h1{
 }
 .divBotones{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
+
+.btnJuego{
+    width: 10rem;
+    height: 5rem;
+}
+
+/* .btnIgual{
+    margin-left: 1rem;
+    margin-right: 1rem;
+} */
 
 .mensajes {
     display: flex;
     justify-content: center;
-}
-.btnIgual{
-    margin-left: 1rem;
-    margin-right: 1rem;
+    color: #fff;
+    font-size: xx-large;
 }
