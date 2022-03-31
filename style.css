@@ -1,8 +1,3 @@
-/* * {
-    background-color: black;
-    color:antiquewhite;
-} */
-
 @font-face {
     font-family: 'Pokemon Solid';
     src: url('fuente/Pokemon\ Solid.ttf') format('truetype');
@@ -14,10 +9,9 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
-    /* background-image: url("img/fondo-pokemon.png"); */
     background: linear-gradient(to top, rgba(255,255,255,0), rgb(161, 161, 161)), url("img/fondo-pokemon.png");
-    /* width:100vw;
-    height:100vh;  */
+    width:100vw;
+    height:100vh; 
 }
 
 
@@ -151,8 +145,8 @@ h1{
 }  
 
 .avatarPokemon{
-    width: 4rem;
-    height: 4rem;
+    width: 3.5rem;
+    height: 3.5rem;
 }
 
 /*********** FIN SELECCION DE AVATAR ***********/
@@ -168,26 +162,42 @@ h1{
     margin-bottom: 3rem;
 }
 .casillero {
+    display: grid;
+    grid-template-areas:"casillero casillero "
+                        "usuario1 usuario2"
+                        "usuario3 usuario4";
+    min-width: auto;
+
+    /******************/
+
     border-top-style:solid ;
     border-bottom-style:solid ;
     border-style:solid ;
     border-color: #6077FF;
-    /* border-top-color: #1D1B1F;
-    border-bottom-color: #1D1B1F; */
-    height: 8rem;
-
-    min-width: 12rem;
+    height: 15rem;
+    
     
    /******************/
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    justify-content: center;
-    align-content: center;
-    /******************/
-    color: #424242;
-    font-size: xx-large;
+
+    
     background-color: #FFD700;
+    min-width: 12rem;
+}
+
+/**************/
+.tablero_avatar{
+    width: 5rem;
+    height: 5rem;
+    grid-area: usuario1;
+}
+.tablero_contenedor_avatar { 
+    width: 5rem;
+    height: 5rem;
+}
+.tablero_casillero{
+    grid-area: casillero;
+    color: #424242;
+    font-size: 2rem;
 
 }
 
@@ -205,16 +215,19 @@ h1{
 .btnOcultarMostrar{
     display: none;
 }
+
+/*********** BOTONES ***********/
+
 .divBotones{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
+
 .btnJuego{
     width: 10rem;
     height: 10rem;
-    /* background: linear-gradient( red 40%, black 10%, blue 10%, white  40%); */
     background-image: linear-gradient(red 45%, black 50% , white 45% );
     border-radius: 50%;
     color:#000000;
@@ -226,7 +239,6 @@ h1{
 	height: 4.6rem;
 	border-radius: 50%;
 	background:#fff; 
-    /* background: radial-gradient(white 65%, black 25%);  */
     border-width: 1rem;
     border: solid;
     border-color: #000000; 
@@ -235,13 +247,26 @@ h1{
 	align-items: center;
 	text-align: center;
     margin:0px auto;
-    font-size: 1rem;
+    font-size:  1rem;
 }
 
-/* .btnIgual{
-    margin-left: 1rem;
-    margin-right: 1rem;
-} */
+.btnJuegarDeNuevo{
+    font-size:  0.75rem;
+}
+
+.btnRanking{
+    font-size:  0.75rem;
+}
+
+/*********** FIN BOTONES ***********/
+
+/*********** MENSAJES ***********/
+.contenedorMensajes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 .mensajes {
     display: flex;
@@ -249,5 +274,6 @@ h1{
     text-align: center;
     color: #fff;
     font-size: xx-large;
+    width: 60%;
 }
 
