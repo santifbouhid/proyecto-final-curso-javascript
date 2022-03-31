@@ -99,7 +99,6 @@ const avanzaCasillero = (x) => {
   
     if (usuario.casillero == 10){
         usuario.casilleroAlert='final';
-        mensajes.innerHTML= `<p>¡Salió ${nuevoDado}!\n¡Ganaste :D! avanzas al casillero ${usuario.casilleroAlert}</p>`
         ganaElJuego(usuario);
     } else {
         usuario.casilleroAlert = usuario.casillero;
