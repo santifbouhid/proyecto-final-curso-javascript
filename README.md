@@ -13,6 +13,8 @@ Para avanzar, hay que adivinar si el próximo dado que salga va a ser menor, igu
 Si acertás en la predicción de mayor o menor, avanzas un casillero. En cambio, si acertás en la predicción de que el próximo tiro va a ser igual, avanzas 2 casillero.
 En cualquier caso que desaciertes, retrocederás un casillero.
 
+¡No olvides de seleccionar tu avatar favorito de Pokémon!
+
 ¡Que te diviertas!
 
 
