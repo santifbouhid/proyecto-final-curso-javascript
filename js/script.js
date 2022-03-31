@@ -94,8 +94,7 @@ const avanzaCasillero = (x) => {
         usuario.casillero ++;
     }
 
-    contadorTurnos(usuario);
-    marcadorCasilleros(usuario);
+    
   
     if (usuario.casillero == 10){
         usuario.casilleroAlert='final';
@@ -104,6 +103,8 @@ const avanzaCasillero = (x) => {
         usuario.casilleroAlert = usuario.casillero;
         mensajes.innerHTML= `<p>¡Salió ${nuevoDado}!\n¡Ganaste :D! avanzas al casillero ${usuario.casilleroAlert}</p>`
     } 
+    contadorTurnos(usuario);
+    marcadorCasilleros(usuario);
   
     moverAvatar();
 }
