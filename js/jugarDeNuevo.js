@@ -9,6 +9,7 @@ const resetMensajes = () => {
         mensajes2.innerHTML= `<p>¡Presiona "TIRAR DADO" para elegir aleatoreamente quién empieza jugando!<br/>Luego, seguirán en orden de izquierda a derecha y/o de arriba hacia abajo.</p>`
     }
     btnJuegarDeNuevo.style.display = 'none';
+    btnModalRanking.style.display = 'none';
     btnTirarDado.style.display = 'inline';
 }
 

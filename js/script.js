@@ -190,12 +190,13 @@ const quienEmpieza = () => {
 
 //* Funcion que se ejecuta cuando el usuario gana.
 const ganaElJuego = (usuario) => {
-    usuario.score = +(usuario.turnosTotales / usuario.vecesJugadas); 
+    usuario.score = (usuario.turnosTotales / usuario.vecesJugadas); 
     alertGanarJuego(usuario);
     btnMayor.style.display = 'none';
     btnMenor.style.display = 'none';
     btnIgual.style.display = 'none';
     btnJuegarDeNuevo.style.display = 'inline';
+    btnModalRanking.style.display = 'inline';
     mensajes.innerHTML= `<p>¡GANÓ ${usuario.nombre.toUpperCase()}!</p>`
     mensajes2.innerHTML= `<p>¿Volver a jugar?</p>`
 }

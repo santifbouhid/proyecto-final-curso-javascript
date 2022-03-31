@@ -69,7 +69,6 @@ const marcadorCasilleros = (usuario) => {
             turnoUsuario4.innerHTML = `<p>Turno n° ${usuario4.turnos}</p>`;
             break;
         default:
-            console.log('ERROR');
             break;
     }
 }

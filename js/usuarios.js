@@ -29,10 +29,9 @@ class Usuario{
     constructor(numeroUsuario) {
         this.usuario = numeroUsuario;
         this.nombre = '';
-        this.nivel  = 1;
         this.turnos = 0; //Turnos por juego.
         this.turnosTotales = 0; // Turnos sumados de todos los juegos.
-        this.vecesJugadas = 0; // Las veces que jugó al juego.]
+        this.vecesJugadas = 1; // Las veces que jugó al juego.
         this.ratio = 0; // Puntaje final (turnos / veces que jugo).
         this.casillero = 0; // Cuenta de los casilleros por juego.
         this.casilleroAlert = 'de salida'; // Texto que se muestra en el alert.
