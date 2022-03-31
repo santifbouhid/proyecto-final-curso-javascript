@@ -275,6 +275,7 @@ const indicadorCasilletoAvatar = () => {
     }
 }
 
+
 const indicadorAvatarQueMueve = () => {
     indicadorDeUsuarioJugando();
     switch (turnoUsuario) {
