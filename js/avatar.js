@@ -77,7 +77,6 @@ let avatar2Modificado = false;
 let avatar3Modificado = false;
 let avatar4Modificado = false;
 
-// const URL_AVATARS = "json/avatares.json";
 
 let contenedorListaAvatares = document.getElementById ('contenedorListaAvatares');
 const btnAceptarCambioAvatar = document.getElementById ('btnAceptarCambioAvatar');
@@ -90,7 +89,6 @@ const seleccionarAvatar = (element, av) => {
       avatar.seleccionado=false;
     }
     av.seleccionado=true;
-    // console.log(arrayAvatares);
   }
   
 }
@@ -118,8 +116,6 @@ const modificarAvatar = (nuevoAvatar, avatarUsuario, btnCambiarAvatarUsuario, nu
       else if ((avatar.seleccionado==true) && (avatar.usuario == 0) ){
         nuevoAvatar.remove();
         avatarUsuario.remove();
-        // console.log(avatar);
-        //nuevoAvatar = document.createElement ('div');
         nuevoAvatar.classList.add('avatarPokemon');
         nuevoAvatar.innerHTML = 
         `<img id="avatarUsuario" class="avatarPokemon" src=${avatar.url}>`;
@@ -175,22 +171,14 @@ const verificarAvatares = (numeroUsuario) => {
       avatar4Modificado = true;
       break;
     default:
-      console.log('ERROR');
       break;
   }
 }
 
 
 
-
-
 //* CODIGO.
-// insertarAvatares();
 pintarAvatares()
-
-
-// console.log(arrayAvatares[1]);
-
 
 
   //!===========================================!\\
@@ -216,7 +204,6 @@ let avatarU4 = document.createElement ('div');
 
 
 
-// reproducirTablero (numeroUsuario, avatar, casilleroSalida);
 
 //* PINTA LOS AVATARES EN EL PRIMER CASILLERO.
 const iniciarTablero = (numUsuario) => {
@@ -303,25 +290,18 @@ const indicadorAvatarQueMueve = () => {
             avatarQueMueve = avatarU4;
             break;
         default:
-            console.log('ERROR');
             break;
     }
 }
 
-// numUsuario, avatar, casillero
 
 //* Ubica a los avatares en el tablero en el inicio de la partida
 const reproducirTablero = (numUsuario, avatar, casillero) => {
     //* numUsuario = el usuario que avanza.
     //* avatar = indica el avatar de qué usuario es el que se va a mover.
     //* casillero = casillero al que avanza.
-    
-    console.log(turnoUsuario);
-    console.log(avatarQueMueve);
-    console.log(casilleroAvatar);
     avatar.remove();
     let avtr = arrayAvatares.find((obj) => obj.usuario == numUsuario);
-    console.log(avtr);
     avatar.classList.add('tablero_contenedor_avatar');
     avatar.innerHTML = 
     `<img class="tablero_avatar" src=${avtr.url}>`;
@@ -338,72 +318,3 @@ const moverAvatar = () => {
   let casillero = casilleroAvatar;
   reproducirTablero(numUsuario, avatar, casillero);
 };
-
-
-
-
-
-
-
-
-
-
-// console.log(avatarU1);
-// console.log(avatarU1.url);
-// console.log(arrayAvatares.find((el) => el.ususario == 1));
-
-
-
-
-
-//let avatarU1 = arrayAvatares.find((el) => el.ususario == 1);
-// let urlAvatarU1 = avatarU1.url;
-
-
-// let avatarU1 = arrayAvatares.find((avatar) => avatar.id == 1);
-// console.log(avatarU1.url);
-
-
-    
-// const element1 = document.createElement ('div');
-// element1.classList.add('tablero_avatarU1');
-// element1.innerHTML = 
-// `<img class="tablero_avatar" src=${avatarU1.url}>`;
-// casillero4.appendChild(element1);
-
-
-// let avatarU2 = arrayAvatares.find((avatar) => avatar.id == 2);
-// console.log(avatarU2.url);
- 
-// const element2 = document.createElement ('div');
-// element2.classList.add('tablero_avatarU2');
-// element2.innerHTML = 
-// `<img class="tablero_avatar" src=${avatarU2.url}>`;
-// casillero8.appendChild(element2);
-
-
-// let avatarU3 = arrayAvatares.find((avatar) => avatar.id == 3);
-// console.log(avatarU3.url);
-
-    
-// const element3 = document.createElement ('div');
-// element3.classList.add('tablero_avatarU3');
-// element3.innerHTML = 
-// `<img class="tablero_avatar" src=${avatarU3.url}>`;
-// casillero4.appendChild(element3);
-
-
-// let avatarU4 = arrayAvatares.find((avatar) => avatar.id == 4);
-// console.log(avatarU1.url);
-
-    
-// const element4 = document.createElement ('div');
-// element4.classList.add('tablero_avatarU4');
-// element4.innerHTML = 
-// `<img class="tablero_avatar" src=${avatarU4.url}>`;
-// casillero6.appendChild(element4);
-
-
-
-
-
