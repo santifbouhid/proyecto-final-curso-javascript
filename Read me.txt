@@ -1,0 +1,6 @@
+Este proyecto es un juego.
+Momentáneamente se juega de a uno pero luego se va a poder jugar de a varios jugadores.
+El juego consiste en tirar un dado y luego adivinar si la siguiente vez que se tire el dado va a salir un numero mas alto o mas bajo que en el tiro anterior.
+Si el jugador acierta la predicción, avanza al siguiente casillero, que son 10 en total.
+Si el jugador NO acierta la predicción, retrocede un casillero.
+Gana el juego el que llegue primero al casillero final, o sea, en la menor cantidad de turnos.

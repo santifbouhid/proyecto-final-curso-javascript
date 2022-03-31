@@ -97,7 +97,7 @@ const avanzaCasillero = (x) => {
     contadorTurnos(usuario);
     marcadorCasilleros(usuario);
   
-    if (usuario.casillero == 10){
+    if (usuario.casillero >= 10){
         usuario.casilleroAlert='final';
         ganaElJuego(usuario);
     } else {
