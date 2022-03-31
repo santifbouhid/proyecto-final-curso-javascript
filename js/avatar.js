@@ -267,6 +267,7 @@ const indicadorCasilletoAvatar = () => {
             casilleroAvatar = casillero8;
             break;
         case 9:
+            casilleroAvatar = casillero9;
             break;
         case 10:
             casilleroAvatar = casilleroLlegada;
